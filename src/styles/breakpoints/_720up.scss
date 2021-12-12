@@ -1,0 +1,13 @@
+.header {
+  &__consultation {
+    flex-direction: row;
+  }
+  &__action-link {
+    max-width: 320px;
+    padding: 1.125rem 0.9375rem;
+    &:first-child {
+      margin-bottom: 0;
+      margin-right: 0.625rem;
+    }
+  }
+}

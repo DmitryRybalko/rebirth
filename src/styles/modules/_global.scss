@@ -1,0 +1,85 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $bg;
+  line-height: 1.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 82.5rem;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+
+.scroll-down .header__wrapper {
+  transform: translate3d(0, -100%, 0);
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: $cBlueDark;
+}
+
+.oval-element--blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, $cBlueLight 0%, $cBlue 100%);
+  box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1),
+    inset 0px 2px 0px rgba(255, 255, 255, 0.25),
+    inset 0px -2px 0px rgba(0, 32, 64, 0.1);
+  border-radius: 4.9375rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: $cWhite;
+}
+
+.oval-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4.9375rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin-bottom: 0.125rem;
+}
+
+.work-hours {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: $cBlueDark;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 7.5vw, 2.25rem);
+  line-height: clamp(2.125rem, 9vw, 2.75rem);
+  color: $cBlueDark;
+}
+
+.header {
+  &__building-icon {
+    margin-left: 1.760625rem;
+  }
+  &__consultation-link {
+    border: 1px solid $cBlueDark;
+    color: $cBlueDark;
+  }
+}

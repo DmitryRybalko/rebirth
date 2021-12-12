@@ -1,0 +1,59 @@
+.header {
+  min-height: 55rem;
+  background: url("../../assets/images/hero/hero-mobile.jpg") no-repeat top;
+  background-size: cover;
+  &__wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-in;
+  }
+  &__nav {
+    min-height: 6.25rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  &__logo {
+    margin-right: auto;
+  }
+  &__list {
+    display: none;
+  }
+  &__phone {
+    display: none;
+  }
+  &__menu-btn {
+    margin-bottom: 0.625rem;
+  }
+  &__main {
+    max-width: fit-content;
+    margin: 0 auto;
+    transform: translateY(clamp(24.375rem, 79vw, 46.875rem));
+  }
+  &__title {
+    text-align: center;
+    max-width: 27.5rem;
+    margin-bottom: 1.25rem;
+  }
+  &__consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__action-link {
+    max-width: 320px;
+    padding: 1.125rem 0.9375rem;
+    &:first-child {
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+
+.heading {
+  font-weight: 500;
+}

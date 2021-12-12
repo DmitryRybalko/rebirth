@@ -1,0 +1,33 @@
+body {
+  font-size: 16px;
+}
+
+.header {
+  min-height: 50rem;
+  background: url("../../assets/images/hero/hero.jpg") no-repeat top;
+  background-size: contain;
+  &__main {
+    margin: 0;
+    transform: translateY(clamp(6.25rem, 11vw, 13.0625rem));
+  }
+  &__title {
+    max-width: 29.375rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+  }
+  &__consultation {
+    flex-direction: row;
+  }
+  &__menu-btn {
+    cursor: pointer;
+  }
+}
+
+.oval-element--blue {
+  &:hover,
+  &:focus {
+    background: linear-gradient(180deg, $cBlue 0%, $cBlue 100%);
+  }
+}
