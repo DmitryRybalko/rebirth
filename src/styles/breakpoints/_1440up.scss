@@ -1,6 +1,7 @@
 .header {
+  margin-bottom: 23.125rem;
   &__main {
-    transform: translateY(clamp(6.25rem, 15vw, 19.3125rem));
+    margin-top: 19.375rem;
   }
   &__action-link {
     max-width: 20.375rem;

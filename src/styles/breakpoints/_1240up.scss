@@ -38,7 +38,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: $cBlue;
     border-radius: 50%;
     background: linear-gradient(180deg, $cBlueLight 0%, $cBlue 100%);
@@ -60,14 +60,76 @@
   }
   &__title {
     max-width: 45.625rem;
-    font-size: 2.75rem;
-    line-height: 3.375rem;
     margin-bottom: 2.5rem;
-  }
-  &__main {
-    transform: translateY(clamp(6.25rem, 14vw, 13.0625rem));
   }
   &__action-link {
     padding: 1.875rem 3.4375rem;
+  }
+}
+
+.underline {
+  &::before {
+    content: url("../../assets/images/hero/line-pc.svg");
+    transform: translate(-8%, 35%);
+  }
+}
+
+.main {
+  &__heading {
+    font-weight: 600;
+    margin-bottom: 3.75rem;
+  }
+  &__benefits {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__accordion {
+    max-width: 25rem;
+    min-height: 25rem;
+  }
+  // &__benefit-panel {
+  //   position: relative;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   border-radius: 20px;
+  //   height: 100%;
+  //   //padding: 120px 40px 0px;
+  // }
+  // &__benefit-img {
+  //   margin-right: 0;
+  //   margin-bottom: 20px;
+  // }
+  // &__benefit-label {
+  //   margin-right: 0;
+  //   margin-bottom: 10px;
+  //   text-align: center;
+  // }
+  // &__benefit-toggle {
+  //   display: none;
+  // }
+  // &__benefit-info {
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 100%;
+  //   padding: 2.5rem;
+  //   background-color: transparent;
+  //   display: block;
+  //   //visibility: hidden;
+  //   opacity: 1;
+  //   border-radius: 0;
+  //   transition: all 0.2s ease;
+  // }
+  &__accordion-text {
+    font-weight: 500;
+    line-height: 1.25rem;
+    //color: $cWhite;
+  }
+}
+
+.main__benefit {
+  &:hover,
+  &:focus {
+    .main__benefit-info {
+      visibility: visible;
+    }
   }
 }

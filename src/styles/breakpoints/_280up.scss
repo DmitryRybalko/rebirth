@@ -1,7 +1,5 @@
 .header {
-  min-height: 55rem;
-  background: url("../../assets/images/hero/hero-mobile.jpg") no-repeat top;
-  background-size: cover;
+  margin-bottom: 11.25rem;
   &__wrapper {
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
@@ -32,8 +30,7 @@
   }
   &__main {
     max-width: fit-content;
-    margin: 0 auto;
-    transform: translateY(clamp(24.375rem, 79vw, 46.875rem));
+    margin: 11.25rem auto 0 auto;
   }
   &__title {
     text-align: center;
@@ -46,7 +43,7 @@
     align-items: center;
   }
   &__action-link {
-    max-width: 320px;
+    max-width: 20rem;
     padding: 1.125rem 0.9375rem;
     &:first-child {
       margin-bottom: 0.625rem;
@@ -54,6 +51,84 @@
   }
 }
 
+.main {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__heading {
+    font-weight: 500;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-bottom: 2.5rem;
+  }
+  &__benefits {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+  }
+  &__accordion {
+    max-width: 27.5rem;
+  }
+  &__accordion-item {
+    border-radius: 0.625rem 0.625rem 0 0;
+    display: flex;
+    align-items: center;
+    min-height: 8.625rem;
+    padding: 2.5rem;
+  }
+  &__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    background-color: $cWhite;
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+  &__accordion-icon {
+    margin-right: 2rem;
+  }
+  &__accordion-label {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: $cWhite;
+    margin-right: auto;
+  }
+  &__accordion-toggle {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__accordion-toggle-icon {
+    transition: transform 0.3s;
+  }
+  &__accordion-text {
+    color: $cBlueDark;
+    padding: 2.5rem;
+  }
+}
+
 .heading {
   font-weight: 500;
+}
+
+.underline {
+  color: $cBlue;
+  position: relative;
+  display: inline-block;
+  &::before {
+    position: absolute;
+    content: url("../../assets/images/hero/line.svg");
+    transform: translate(-10%, 35%);
+  }
+}
+
+.section-end {
+  margin-bottom: 7.5rem;
+}
+
+.accordion--active {
+  //padding: 2.5rem;
 }
