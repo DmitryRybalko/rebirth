@@ -108,6 +108,9 @@
     color: $cBlueDark;
     padding: 2.5rem;
   }
+  &__text--hover {
+    display: none;
+  }
 }
 
 .heading {
@@ -130,5 +133,4 @@
 }
 
 .accordion--active {
-  //padding: 2.5rem;
 }
