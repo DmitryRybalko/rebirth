@@ -79,7 +79,7 @@
     font-weight: 600;
     margin-bottom: 3.75rem;
   }
-  &__benefits {
+  &__grid {
     grid-template-columns: repeat(3, 1fr);
   }
   &__accordion {
@@ -122,6 +122,34 @@
     color: $cWhite;
     transform-origin: bottom;
     transition: max-height 0.4s, transform 0.4s;
+  }
+  &__draft {
+    max-width: clamp(75rem, 90vw, 80rem);
+    min-height: 28.3125rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  &__draft-show {
+    max-width: 36.25rem;
+  }
+  &__draft-img {
+    top: -5%;
+    max-width: 23.75rem;
+    max-height: 23.75rem;
+  }
+  &__draft-panel {
+    background-color: $cGrayLight;
+    padding: 2.5rem;
+  }
+  &__choices {
+    background-color: $cWhite;
+  }
+  &__radio-label {
+    cursor: pointer;
+    padding: 0.9375rem clamp(1.875rem, 10.3vw, 5.375rem);
+  }
+  &__action-btn {
+    cursor: pointer;
   }
 }
 
