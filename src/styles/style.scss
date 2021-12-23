@@ -2,6 +2,7 @@
 @import "./modules/variables";
 @import "./modules/global";
 @import "./modules/menu";
+@import "./vendors/swiper-bundle.min.scss";
 
 @media (min-width: 280px) {
   @import "./breakpoints/280up";

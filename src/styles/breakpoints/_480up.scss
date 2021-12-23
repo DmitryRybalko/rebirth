@@ -1,1 +1,16 @@
-
+.main {
+  &__how-to-item {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  &__icon-container {
+    margin-bottom: 0;
+    margin-right: 2.5rem;
+  }
+  &__how-to-label {
+    text-align: start;
+  }
+  &__item-text {
+    text-align: start;
+  }
+}

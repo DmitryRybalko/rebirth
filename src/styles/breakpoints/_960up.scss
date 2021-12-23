@@ -30,4 +30,38 @@ body {
   &__grid {
     gap: 2.5rem;
   }
+  &__how-to-section {
+    min-height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  &__how-to {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    //background-color: cadetblue;
+  }
+  &__how-to-item {
+    width: clamp(440px, 44vw, 840px);
+    max-width: 840px;
+    //min-height: 170px;
+    //width: minmax(440px, 840px);
+  }
+  &__how-to-label {
+    margin-bottom: 0.625rem;
+    max-width: 630px;
+    text-align: start;
+  }
+  &__item-text {
+    max-width: 630px;
+    text-align: start;
+  }
+}
+
+.stretch-item {
+  max-width: 25rem;
+  //min-height: 550px;
+  grid-row: 1/4;
+  grid-column: 2;
 }
