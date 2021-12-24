@@ -154,6 +154,14 @@
   &__swiper-button {
     display: block;
   }
+  &__clients-swiper {
+    min-height: 260px;
+  }
+  &__client-slide {
+    width: 620px;
+    max-width: 620px;
+    min-height: 240px;
+  }
 }
 
 .main__accordion-item {

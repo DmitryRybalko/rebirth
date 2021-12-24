@@ -38,30 +38,36 @@ body {
     padding: 40px 0;
   }
   &__how-to {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-    //background-color: cadetblue;
+    grid-template-columns: repeat(1, 1fr);
   }
   &__how-to-item {
-    width: clamp(440px, 44vw, 840px);
-    max-width: 840px;
-    //min-height: 170px;
-    //width: minmax(440px, 840px);
+    max-width: 52.5rem;
   }
   &__how-to-label {
     margin-bottom: 0.625rem;
-    max-width: 630px;
+    max-width: 39.375rem;
     text-align: start;
   }
   &__item-text {
-    max-width: 630px;
+    max-width: 39.375rem;
     text-align: start;
+  }
+  &__partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $cWhite;
+    min-height: 160px;
+    width: clamp(350px, 29vw, 400px);
+    box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+    border-radius: 20px;
+  }
+  &__partners-section {
+    margin-bottom: 12.5rem;
   }
 }
 
 .stretch-item {
-  max-width: 25rem;
-  //min-height: 550px;
-  grid-row: 1/4;
-  grid-column: 2;
+  width: 100%;
+  margin: 0 auto;
 }

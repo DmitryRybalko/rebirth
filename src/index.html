@@ -1,141 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ЖК ВОЗРОЖДЕНИЕ</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- build:css ./styles/style.css -->
-    <link rel="stylesheet" href="./styles/style.scss" />
-    <!-- endbuild -->
-  </head>
-  <body>
-    <div class="mobile-menu">
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link nav-link" href="#">О компании</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link nav-link" href="#">Новости</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link nav-link" href="#">Документы</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a class="mobile-menu__link nav-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <div class="mobile-menu__phone">
-        <div class="mobile-menu__connect">
-          <span class="mobile-menu__phone-number phone-number"
-            >+7 982 45-22-67</span
-          >
-          <span class="mobile-menu__work-hours work-hours"
-            >Пн-Пт. с 8:00 до 19:00</span
-          >
-        </div>
-        <a
-          class="mobile-menu__phone-link phone-link oval-element--blue"
-          href="tel:+798245-22-67"
-          ><span class="mobile-menu__phone-text">Заказать звонок</span>
-          <img
-            class="mobile-menu__phone-img phone-img"
-            src="./assets/icons/phone.svg"
-            alt="phone"
-        /></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЖК ВОЗРОЖДЕНИЕ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- build:css ./styles/style.css -->
+  <link rel="stylesheet" href="./styles/style.scss" />
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div class="mobile-menu">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link nav-link" href="#">О компании</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link nav-link" href="#">Новости</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link nav-link" href="#">Документы</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link nav-link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <div class="mobile-menu__phone">
+      <div class="mobile-menu__connect">
+        <span class="mobile-menu__phone-number phone-number">+7 982 45-22-67</span>
+        <span class="mobile-menu__work-hours work-hours">Пн-Пт. с 8:00 до 19:00</span>
+      </div>
+      <a class="mobile-menu__phone-link phone-link oval-element--blue" href="tel:+798245-22-67"><span
+          class="mobile-menu__phone-text">Заказать звонок</span>
+        <img class="mobile-menu__phone-img phone-img" src="./assets/icons/phone.svg" alt="phone" /></a>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="container">
+        <nav class="header__nav">
+          <a class="header__logo logo" href="#"><img class="header__logo-img" src="./assets/images/logo/logo.svg"
+              alt="жк возрождение" /></a>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link nav-link" href="#">О компании</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link nav-link" href="#">Новости</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link nav-link" href="#">Документы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__phone">
+            <div class="header__connect">
+              <span class="header__phone-number phone-number">+7 982 45-22-67</span>
+              <span class="header__work-hours work-hours">Пн-Пт. с 8:00 до 19:00</span>
+            </div>
+            <a class="header__phone-link phone-link" href="tel:+798245-22-67"><img class="header__phone-img phone-img"
+                src="./assets/icons/phone.svg" alt="phone" /></a>
+          </div>
+          <button class="header__menu-btn menu-btn oval-element--blue">
+            <span class="menu-btn-text">Menu</span>
+            <img class="menu-btn-icon" src="./assets/icons/menu.svg" alt="menu icon" />
+          </button>
+        </nav>
       </div>
     </div>
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="container">
-          <nav class="header__nav">
-            <a class="header__logo logo" href="#"
-              ><img
-                class="header__logo-img"
-                src="./assets/images/logo/logo.svg"
-                alt="жк возрождение"
-            /></a>
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link nav-link" href="#">О компании</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link nav-link" href="#">Новости</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link nav-link" href="#">Документы</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link nav-link" href="#">Контакты</a>
-              </li>
-            </ul>
-            <div class="header__phone">
-              <div class="header__connect">
-                <span class="header__phone-number phone-number"
-                  >+7 982 45-22-67</span
-                >
-                <span class="header__work-hours work-hours"
-                  >Пн-Пт. с 8:00 до 19:00</span
-                >
-              </div>
-              <a class="header__phone-link phone-link" href="tel:+798245-22-67"
-                ><img
-                  class="header__phone-img phone-img"
-                  src="./assets/icons/phone.svg"
-                  alt="phone"
-              /></a>
-            </div>
-            <button class="header__menu-btn menu-btn oval-element--blue">
-              <span class="menu-btn-text">Menu</span>
-              <img
-                class="menu-btn-icon"
-                src="./assets/icons/menu.svg"
-                alt="menu icon"
-              />
-            </button>
-          </nav>
+    <div class="container">
+      <div class="header__main">
+        <h1 class="header__title heading">
+          Более <span class="underline">1000</span> комфортных квартир от 2,3
+          млн рублей в Дзержинском р-не Ярославля
+        </h1>
+        <div class="header__consultation">
+          <a class="header__action-link oval-element--blue" href="#">Выбрать квартиру
+            <img class="header__building-icon building-icon" src="./assets/icons/house.svg" alt="building icon" /></a>
+          <a class="header__action-link header__consultation-link oval-element" href="#">Получить консультацию</a>
         </div>
       </div>
-      <div class="container">
-        <div class="header__main">
-          <h1 class="header__title heading">
-            Более <span class="underline">1000</span> комфортных квартир от 2,3
-            млн рублей в Дзержинском р-не Ярославля
-          </h1>
-          <div class="header__consultation">
-            <a class="header__action-link oval-element--blue" href="#"
-              >Выбрать квартиру
-              <img
-                class="header__building-icon building-icon"
-                src="./assets/icons/house.svg"
-                alt="building icon"
-            /></a>
-            <a
-              class="header__action-link header__consultation-link oval-element"
-              href="#"
-              >Получить консультацию</a
-            >
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <section class="main__section main__benefits-section section-end">
-          <h2 class="main__heading main__benefits-heading">
-            Преимущества жизни в ЖК “Возрождение”
-          </h2>
-          <div class="main__grid">
-            <div class="main__accordion">
-              <div
-                class="main__accordion-item"
-                style="
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="main__section main__benefits-section section-end">
+        <h2 class="main__heading main__benefits-heading">
+          Преимущества жизни в ЖК “Возрождение”
+        </h2>
+        <div class="main__grid">
+          <div class="main__accordion">
+            <div class="main__accordion-item" style="
                   background-image: linear-gradient(
                       0deg,
                       rgba(0, 32, 64, 0.5),
@@ -145,39 +107,29 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;
-                "
-               >
-                <img
-                  class="main__accordion-icon"
-                  src="./assets/icons/plant-mobile.svg"
-                  alt="Росток"
-                />
-                <p class="main__accordion-label main__label">Экология</p>
-                <button class="main__accordion-toggle">
-                  <img
-                    class="main__accordion-toggle-icon"
-                    src="./assets/icons/arrow.svg"
-                    alt="стрелка, обозначающая открыто или скрыто описание"
-                  />
-                </button>
-                <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении</p>
-              </div>
-              <div class="main__accordion-content">
-                <p class="main__accordion-text">
-                  Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении
-                </p>
-              </div>
+                ">
+              <img class="main__accordion-icon" src="./assets/icons/plant-mobile.svg" alt="Росток" />
+              <p class="main__accordion-label main__label">Экология</p>
+              <button class="main__accordion-toggle">
+                <img class="main__accordion-toggle-icon" src="./assets/icons/arrow.svg"
+                  alt="стрелка, обозначающая открыто или скрыто описание" />
+              </button>
+              <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении</p>
             </div>
-            <div class="main__accordion">
-              <div
-                class="main__accordion-item"
-                style="
+            <div class="main__accordion-content">
+              <p class="main__accordion-text">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении
+              </p>
+            </div>
+          </div>
+          <div class="main__accordion">
+            <div class="main__accordion-item" style="
                   background-image: linear-gradient(
                       0deg,
                       rgba(0, 32, 64, 0.5),
@@ -187,39 +139,29 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;
-                "
-              >
-                <img
-                  class="main__accordion-icon"
-                  src="./assets/icons/money-mobile.svg"
-                  alt="Монеты"
-                />
-                <p class="main__accordion-label main__label">Доступная стоимость</p>
-                <button class="main__accordion-toggle">
-                  <img
-                    class="main__accordion-toggle-icon"
-                    src="./assets/icons/arrow.svg"
-                    alt="стрелка, обозначающая открыто или скрыто описание"
-                  />
-                </button>
-                <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении</p>
-              </div>
-              <div class="main__accordion-content">
-                <p class="main__accordion-text">
-                  Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении
-                </p>
-              </div>
+                ">
+              <img class="main__accordion-icon" src="./assets/icons/money-mobile.svg" alt="Монеты" />
+              <p class="main__accordion-label main__label">Доступная стоимость</p>
+              <button class="main__accordion-toggle">
+                <img class="main__accordion-toggle-icon" src="./assets/icons/arrow.svg"
+                  alt="стрелка, обозначающая открыто или скрыто описание" />
+              </button>
+              <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении</p>
             </div>
-            <div class="main__accordion">
-              <div
-                class="main__accordion-item"
-                style="
+            <div class="main__accordion-content">
+              <p class="main__accordion-text">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении
+              </p>
+            </div>
+          </div>
+          <div class="main__accordion">
+            <div class="main__accordion-item" style="
                   background-image: linear-gradient(
                       0deg,
                       rgba(0, 32, 64, 0.5),
@@ -229,39 +171,29 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;
-                "
-              >
-                <img
-                  class="main__accordion-icon"
-                  src="./assets/icons/thumbs-up-mobile.svg"
-                  alt="Палец вверх - лайк"
-                />
-                <p class="main__accordion-label main__label">Надежность</p>
-                <button class="main__accordion-toggle">
-                  <img
-                    class="main__accordion-toggle-icon"
-                    src="./assets/icons/arrow.svg"
-                    alt="стрелка, обозначающая открыто или скрыто описание"
-                  />
-                </button>
-                <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении</p>
-              </div>
-              <div class="main__accordion-content">
-                <p class="main__accordion-text">
-                  Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении
-                </p>
-              </div>
+                ">
+              <img class="main__accordion-icon" src="./assets/icons/thumbs-up-mobile.svg" alt="Палец вверх - лайк" />
+              <p class="main__accordion-label main__label">Надежность</p>
+              <button class="main__accordion-toggle">
+                <img class="main__accordion-toggle-icon" src="./assets/icons/arrow.svg"
+                  alt="стрелка, обозначающая открыто или скрыто описание" />
+              </button>
+              <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении</p>
             </div>
-            <div class="main__accordion">
-              <div
-                class="main__accordion-item"
-                style="
+            <div class="main__accordion-content">
+              <p class="main__accordion-text">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении
+              </p>
+            </div>
+          </div>
+          <div class="main__accordion">
+            <div class="main__accordion-item" style="
                   background-image: linear-gradient(
                       0deg,
                       rgba(0, 32, 64, 0.5),
@@ -271,39 +203,29 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;
-                "
-              >
-                <img
-                  class="main__accordion-icon"
-                  src="./assets/icons/car-mobile.svg"
-                  alt="Автомобиль"
-                />
-                <p class="main__accordion-label main__label">Транспортная доступность</p>
-                <button class="main__accordion-toggle">
-                  <img
-                    class="main__accordion-toggle-icon"
-                    src="./assets/icons/arrow.svg"
-                    alt="стрелка, обозначающая открыто или скрыто описание"
-                  />
-                </button>
-                <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении</p>
-              </div>
-              <div class="main__accordion-content">
-                <p class="main__accordion-text">
-                  Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении
-                </p>
-              </div>
+                ">
+              <img class="main__accordion-icon" src="./assets/icons/car-mobile.svg" alt="Автомобиль" />
+              <p class="main__accordion-label main__label">Транспортная доступность</p>
+              <button class="main__accordion-toggle">
+                <img class="main__accordion-toggle-icon" src="./assets/icons/arrow.svg"
+                  alt="стрелка, обозначающая открыто или скрыто описание" />
+              </button>
+              <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении</p>
             </div>
-            <div class="main__accordion">
-              <div
-                class="main__accordion-item"
-                style="
+            <div class="main__accordion-content">
+              <p class="main__accordion-text">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении
+              </p>
+            </div>
+          </div>
+          <div class="main__accordion">
+            <div class="main__accordion-item" style="
                   background-image: linear-gradient(
                       0deg,
                       rgba(0, 32, 64, 0.5),
@@ -313,39 +235,29 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;
-                "
-              >
-                <img
-                  class="main__accordion-icon"
-                  src="./assets/icons/flat-mobile.svg"
-                  alt="планировка квартиры"
-                />
-                <p class="main__accordion-label main__label">Разнообразие планировки</p>
-                <button class="main__accordion-toggle">
-                  <img
-                    class="main__accordion-toggle-icon"
-                    src="./assets/icons/arrow.svg"
-                    alt="стрелка, обозначающая открыто или скрыто описание"
-                  />
-                </button>
-                <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении</p>
-              </div>
-              <div class="main__accordion-content">
-                <p class="main__accordion-text">
-                  Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении
-                </p>
-              </div>
+                ">
+              <img class="main__accordion-icon" src="./assets/icons/flat-mobile.svg" alt="планировка квартиры" />
+              <p class="main__accordion-label main__label">Разнообразие планировки</p>
+              <button class="main__accordion-toggle">
+                <img class="main__accordion-toggle-icon" src="./assets/icons/arrow.svg"
+                  alt="стрелка, обозначающая открыто или скрыто описание" />
+              </button>
+              <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении</p>
             </div>
-            <div class="main__accordion">
-              <div
-                class="main__accordion-item"
-                style="
+            <div class="main__accordion-content">
+              <p class="main__accordion-text">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении
+              </p>
+            </div>
+          </div>
+          <div class="main__accordion">
+            <div class="main__accordion-item" style="
                   background-image: linear-gradient(
                       0deg,
                       rgba(0, 32, 64, 0.5),
@@ -355,121 +267,194 @@
                   background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;
-                "
-               >
-                <img
-                  class="main__accordion-icon"
-                  src="./assets/icons/gear-mobile.svg"
-                  alt="Иконка шестеренки"
-                />
-                <p class="main__accordion-label main__label">Инфраструктура</p>
-                <button class="main__accordion-toggle">
-                  <img
-                    class="main__accordion-toggle-icon"
-                    src="./assets/icons/arrow.svg"
-                    alt="стрелка, обозначающая открыто или скрыто описание"
-                  />
-                </button>
-                <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении</p>
-              </div>
-              <div class="main__accordion-content">
-                <p class="main__accordion-text">
-                  Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
-                  беспокоить, так как дом находится на второй линии, а
-                  развитая инфраструктура этой части города будет полностью в
-                  Вашем распоряжении
-                </p>
-              </div>
+                ">
+              <img class="main__accordion-icon" src="./assets/icons/gear-mobile.svg" alt="Иконка шестеренки" />
+              <p class="main__accordion-label main__label">Инфраструктура</p>
+              <button class="main__accordion-toggle">
+                <img class="main__accordion-toggle-icon" src="./assets/icons/arrow.svg"
+                  alt="стрелка, обозначающая открыто или скрыто описание" />
+              </button>
+              <p class="main__text--hover">Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении</p>
+            </div>
+            <div class="main__accordion-content">
+              <p class="main__accordion-text">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а
+                развитая инфраструктура этой части города будет полностью в
+                Вашем распоряжении
+              </p>
             </div>
           </div>
-          </div>
-        </section>
-        <section class="main__section main__draft-section section-end"> 
-          <h2 class="main__heading main__draft-heading"> 
-            Планировка квартир 
-          </h2> 
-          <div class="main__draft"> 
-            <div class="main__draft-show"> 
-              <img class="main__draft-img  in-view" src="./assets/images/drafts/draft-2.png" alt="планировка однокомнатной квартиры" > 
-              <img class="main__draft-img" src="./assets/images/drafts/draft-2.png" alt="планировка двухкомнатной квартиры">
-            </div> 
-            <form class="form" action=""> 
-              <div class="main__draft-panel"> 
-                <div class="main__choices"> 
-                  <input class="main__radio-btn" type="radio" name="комната" value="1 комната" id="1-комн" checked> 
-                  <label class="main__radio-label oval-element" for="1-комн">1-комн.</label> 
-                  <input class="main__radio-btn" type="radio" name="комната" value="2 комнаты" id="2-комн" > 
-                  <label class="main__radio-label oval-element" for="2-комн">2-комн.</label> 
-                </div> 
-                <p class="main__draft-text">Однокомнатные квартиры от 23 м&#178;</p> 
-                <span class="main__price">от 5 400 000 ₽</span> 
-                <button class="main__action-btn oval-element--blue">Подобрать квартиру</button> 
-              </div> 
-            </div> 
-            </form> 
-        </section>
-        <section class="main__section main__gallery-section section-end">
-          <h2 class="main__heading main__gallery-heading"> 
-            Галерея наших фото
-          </h2>
-          <div class="main__swiper swiper">
-            <!-- Additional required wrapper -->
-            <div class="main__swiper-wrapper swiper-wrapper">
-              <!-- Slides -->
-              <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide" src="./assets/images/gallery/gallery-1.jpg" alt="дом" ></div>
-              <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide" src="./assets/images/gallery/gallery-2.jpg" alt="дом" ></div>
-              <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide" src="./assets/images/gallery/gallery-3.jpg" alt="дом" ></div>
-              <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide" src="./assets/images/gallery/gallery-4.jpg" alt="дом" ></div>
-              <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide" src="./assets/images/gallery/gallery-5.jpg" alt="дом" ></div>
-              <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide" src="./assets/images/gallery/gallery-6.jpg" alt="дом" ></div>
-              <!-- END Slides -->
-            </div>
-            <div class="main__swiper-button swiper-button-prev"></div>
-            <div class="main__swiper-button swiper-button-next"></div>
-          </div>
-        </section>
-      </div>
-      <h2 class="main__heading main__gallery-heading"> 
-        Как купить?
+        </div>
+    </div>
+    </section>
+    <section class="main__section main__draft-section section-end">
+      <h2 class="main__heading main__draft-heading">
+        Планировка квартир
       </h2>
-      <section class="main__section main__how-to-section section-end">
-        <div class="container">
-          <div class="main__how-to">
-            <div class="main__how-to-item">
-              <div class="main__icon-container oval-element--blue">
-                <img class="main__icon" src="./assets/icons/money.svg" alt="иконка с изображением монет">
-              </div>
-              <div class="main__content">
-                <p class="main__label main__how-to-label">Материнский капитал</p>
-                <p class="main__item-text">Материнский капитал и другие субсидии в качестве первоначального взноса при покупке жилья в ипотеку или части стоимости квартиры.</p>
+      <div class="main__draft">
+        <div class="main__draft-show">
+          <img class="main__draft-img  in-view" src="./assets/images/drafts/draft-2.png"
+            alt="планировка однокомнатной квартиры">
+          <img class="main__draft-img" src="./assets/images/drafts/draft-2.png" alt="планировка двухкомнатной квартиры">
+        </div>
+        <form class="form" action="">
+          <div class="main__draft-panel">
+            <div class="main__choices">
+              <input class="main__radio-btn" type="radio" name="комната" value="1 комната" id="1-комн" checked>
+              <label class="main__radio-label oval-element" for="1-комн">1-комн.</label>
+              <input class="main__radio-btn" type="radio" name="комната" value="2 комнаты" id="2-комн">
+              <label class="main__radio-label oval-element" for="2-комн">2-комн.</label>
+            </div>
+            <p class="main__draft-text">Однокомнатные квартиры от 23 м&#178;</p>
+            <span class="main__price">от 5 400 000 ₽</span>
+            <button class="main__action-btn oval-element--blue">Подобрать квартиру</button>
+          </div>
+      </div>
+      </form>
+    </section>
+    <section class="main__section main__gallery-section section-end">
+      <h2 class="main__heading main__gallery-heading">
+        Галерея наших фото
+      </h2>
+      <div class="main__swiper swiper">
+        <!-- Additional required wrapper -->
+        <div class="main__swiper-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
+              src="./assets/images/gallery/gallery-1.jpg" alt="дом"></div>
+          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
+              src="./assets/images/gallery/gallery-2.jpg" alt="дом"></div>
+          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
+              src="./assets/images/gallery/gallery-3.jpg" alt="дом"></div>
+          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
+              src="./assets/images/gallery/gallery-4.jpg" alt="дом"></div>
+          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
+              src="./assets/images/gallery/gallery-5.jpg" alt="дом"></div>
+          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
+              src="./assets/images/gallery/gallery-6.jpg" alt="дом"></div>
+          <!-- END Slides -->
+        </div>
+        <div class="main__swiper-button swiper-button-prev"></div>
+        <div class="main__swiper-button swiper-button-next"></div>
+      </div>
+    </section>
+    </div>
+    <h2 class="main__heading main__gallery-heading">
+      Как купить?
+    </h2>
+    <section class="main__section main__how-to-section section-end">
+      <div class="container">
+        <div class="main__how-to">
+          <div class="main__how-to-item">
+            <div class="main__icon-container oval-element--blue">
+              <img class="main__icon" src="./assets/icons/money.svg" alt="иконка с изображением монет">
+            </div>
+            <div class="main__content">
+              <p class="main__label main__how-to-label">Материнский капитал</p>
+              <p class="main__item-text">Материнский капитал и другие субсидии в качестве первоначального взноса при
+                покупке жилья в ипотеку или части стоимости квартиры.</p>
+            </div>
+          </div>
+          <div class="main__how-to-item">
+            <div class="main__icon-container oval-element--blue">
+              <img class="main__icon" src="./assets/icons/people.svg" alt="иконка с изображением людей">
+            </div>
+            <div class="main__content">
+              <p class="main__label main__how-to-label">В ипотеку</p>
+              <p class="main__item-text">Специальные ставки некоторых категорий граждан: многодетных и военных.</p>
+            </div>
+          </div>
+          <div class="main__how-to-item">
+            <div class="main__icon-container oval-element--blue">
+              <img class="main__icon" src="./assets/icons/card.svg" alt="иконка с изображением кредитной карты">
+            </div>
+            <div class="main__content">
+              <p class="main__label main__how-to-label">100% оплата</p>
+              <p class="main__item-text">Принимают оплату по безналичному расчету.</p>
+            </div>
+          </div>
+          <div class="main__how-to-item stretch-item">
+            <div class="main__consultation-content">
+              <p class="main__label main__question-label">Есть вопросы?</p>
+              <p class="main__question-text">Закажите бесплатную консультацию или звоните за номером:</p>
+              <p class="main__phone-number">+7 982 45-22-67</p>
+              <button class="main__consultation-btn oval-element--blue">Заказать консультацию</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__clients-section section-end">
+      <h2 class="main__heading main__clients-heading">
+        Отзывы наших клиентов
+      </h2>
+      <div class="main__clients-swiper swiper">
+        <!-- Additional required wrapper -->
+        <div class="main__clients-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="main__client-slide swiper-slide">
+            <div class="main__client">
+              <img class="main__client-photo" src="./assets/images/clients/vitaly.jpg" alt="фото">
+              <div class="main__client-meta">
+                <p class="main__client-name">Виталий Степанов</p>
+                <a class="main__client-link" href="https://vk.com" target="_blank">Страница VK</a>
               </div>
             </div>
-            <div class="main__how-to-item">
-              <div class="main__icon-container oval-element--blue">
-                <img class="main__icon" src="./assets/icons/people.svg" alt="иконка с изображением людей">
-              </div>
-              <div class="main__content">
-                <p class="main__label main__how-to-label">В ипотеку</p>
-                <p class="main__item-text">Специальные ставки некоторых категорий граждан: многодетных и военных.</p>  
-              </div>
-            </div>
-            <div class="main__how-to-item">
-              <div class="main__icon-container oval-element--blue">
-                <img class="main__icon" src="./assets/icons/card.svg" alt="иконка с изображением кредитной карты">
-              </div>
-              <div class="main__content">
-                <p class="main__label main__how-to-label">100% оплата</p>
-                <p class="main__item-text">Принимают оплату по безналичному расчету.</p>    
+            <p class="main__client-review">Современные технологии достигли такого уровня, что внедрение современных
+              методик говорит о возможностях как самодостаточных, так и внешне зависимых концептуальных решений.
+              Диаграммы связей объективно рассмотрены соответствующими инстанциями.</p>
+          </div>
+          <div class="main__client-slide swiper-slide">
+            <div class="main__client">
+              <img class="main__client-photo" src="./assets/images/clients/anna.jpg" alt="фото">
+              <div class="main__client-meta">
+                <p class="main__client-name">Анна Петровна</p>
+                <a class="main__client-link" href="https://vk.com" target="_blank">Страница VK</a>
               </div>
             </div>
-            <div class="main__how-to-item stretch-item"><div class="main__content"></div></div>
-          </div> 
+            <p class="main__client-review">Современные технологии достигли такого уровня, что постоянное
+              информационно-пропагандистское обеспечение нашей деятельности предоставляет широкие возможности для
+              переосмысления внешнеэкономических политик.</p>
+          </div>
+          <div class="main__client-slide swiper-slide">
+            <div class="main__client">
+              <img class="main__client-photo" src="./assets/images/clients/anton.jpg" alt="фото">
+              <div class="main__client-meta">
+                <p class="main__client-name">Антон Сергеевич</p>
+                <a class="main__client-link" href="https://vk.com" target="_blank">Страница VK</a>
+              </div>
+            </div>
+            <p class="main__client-review">Повседневная практика показывает, что начало повседневной работы по
+              формированию позиции предопределяет высокую востребованность форм воздействия!</p>
+          </div>
+          <!-- END Slides -->
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="main__section main__partners-section">
+        <h2 class="main__heading main__partners-heading">
+          Наши партнеры
+        </h2>
+        <div class="main__grid">
+          <div class="main__partner">
+            <img class="main__partner-logo" src="./assets/icons/vtb.svg" alt="ВТБ">
+          </div>
+          <div class="main__partner">
+            <img class="main__partner-logo" src="./assets/icons/sber.svg" alt="Сбербанк">
+          </div>
+          <div class="main__partner">
+            <img class="main__partner-logo" src="./assets/icons/rusbank.svg" alt="Россельхоз банк">
+          </div>
         </div>
       </section>
-    </main>
-    <script type="module" src="./scripts/main.js"></script>
-  </body>
+    </div>
+  </main>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
 </html>

@@ -7,3 +7,24 @@
     max-width: 20.375rem;
   }
 }
+
+.main {
+  &__how-to {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+  }
+  &__how-to-item {
+    width: clamp(27.5rem, 60vw, 52.5rem);
+  }
+  &__consultation-btn {
+    padding: 1.5625rem 2.1875rem;
+  }
+}
+
+.stretch-item {
+  width: 25rem;
+  min-height: 34.375rem;
+  margin: 0;
+  grid-row: 1/4;
+  grid-column: 2;
+}

@@ -2,6 +2,7 @@
   &__how-to-item {
     align-items: flex-start;
     flex-direction: row;
+    padding: 2.5rem;
   }
   &__icon-container {
     margin-bottom: 0;
@@ -12,5 +13,8 @@
   }
   &__item-text {
     text-align: start;
+  }
+  &__consultation-btn {
+    padding: 1.875rem 3.75rem;
   }
 }
