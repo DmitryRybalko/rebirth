@@ -57,13 +57,44 @@ body {
     align-items: center;
     justify-content: center;
     background-color: $cWhite;
-    min-height: 160px;
-    width: clamp(350px, 29vw, 400px);
+    min-height: 10rem;
+    width: clamp(21.875rem, 29vw, 25rem);
     box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
   &__partners-section {
     margin-bottom: 12.5rem;
+  }
+}
+
+.footer {
+  &__top {
+    flex-direction: row;
+    justify-content: start;
+  }
+  &__logo {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+  &__top-item {
+    margin-right: 1.875rem;
+  }
+  &__text {
+    margin-bottom: 0;
+  }
+  &__grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.5rem 0;
+  }
+  &__bottom {
+    display: flex;
+    width: 100%;
+  }
+  &__bottom-item1 {
+    grid-template-columns: repeat(2, 17.375rem);
+    gap: 1.25rem 5rem;
+    max-width: 39.75rem;
+    margin-right: auto;
   }
 }
 

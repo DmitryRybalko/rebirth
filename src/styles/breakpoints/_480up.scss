@@ -18,3 +18,21 @@
     padding: 1.875rem 3.75rem;
   }
 }
+
+.footer {
+  &__action-btn {
+    padding: 1.875rem 3.75rem;
+  }
+  &__grid {
+    padding: 2.5rem;
+  }
+  &__bottom-item1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 3.75rem;
+    max-width: 38.75rem;
+  }
+  &__link-text {
+    text-align: left;
+    max-width: fit-content;
+  }
+}

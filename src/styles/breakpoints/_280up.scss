@@ -354,6 +354,108 @@
   }
 }
 
+.footer {
+  width: 100%;
+  background-color: $cBlueDark;
+  color: $cWhite;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  &__logo {
+    margin-bottom: 1.5625rem;
+  }
+  &__info {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    margin-bottom: 0.3125rem;
+  }
+  &__ask {
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: 1.25rem;
+    text-align: center;
+  }
+  &__action-btn {
+    color: $cBlueDark;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    padding: 1.5625rem 2.1875rem;
+  }
+  &__row {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    padding: 0.625rem;
+  }
+  &__label {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    display: inline-block;
+    margin-bottom: 0.625rem;
+  }
+  &__item {
+    max-width: 25rem;
+  }
+  &__bottom {
+    padding: 2.5rem 0;
+  }
+  &__bottom-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__bottom-item1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+  &__link {
+    font-weight: 600;
+    color: $cWhite;
+  }
+  &__link-text {
+    text-align: center;
+  }
+  &__socials {
+    display: flex;
+  }
+  &__social-item {
+    height: 1.5625rem;
+    &:not(:last-child) {
+      margin-right: 1.25rem;
+    }
+    &:last-child {
+      margin-right: 2.5rem;
+    }
+  }
+  &__social-icon {
+    width: 1.5625rem;
+    height: 1.5625rem;
+  }
+  &__btn-scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.15625rem 1.25rem;
+    background-color: $cWhite;
+    border-radius: 5px;
+  }
+}
+
 .main__radio-btn {
   &:checked + .main__radio-label {
     background: linear-gradient(180deg, $cBlueLight 0%, $cBlue 100%);

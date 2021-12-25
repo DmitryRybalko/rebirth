@@ -2,7 +2,8 @@ export const toggleMenu = () => {
   let toggle = false;
   const menuBtn = document.querySelector(".header__menu-btn");
   const mobileMenu = document.querySelector(".mobile-menu");
-  const logo = document.querySelector(".header__logo-img");
+  const headerLogo = document.querySelector(".header__logo-img");
+  const footerLogo = document.querySelector(".footer__logo");
   let menuIcon = document.querySelector(".menu-btn-icon");
   menuBtn.addEventListener("click", () => {
     toggle = !toggle;
@@ -21,10 +22,12 @@ export const toggleMenu = () => {
       toggle = false;
     }
     if (window.innerWidth <= "465") {
-      logo.src = "./assets/images/logo/logo-mobile.svg";
+      headerLogo.src = "./assets/images/logo/logo-mobile.svg";
+      footerLogo.src = "./assets/images/logo/footer-mobile-logo.svg";
     }
     if (window.innerWidth >= "466") {
-      logo.src = "./assets/images/logo/logo.svg";
+      headerLogo.src = "./assets/images/logo/logo.svg";
+      footerLogo.src = "./assets/images/logo/footer-logo.svg";
     }
   });
 };
