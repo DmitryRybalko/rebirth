@@ -3,15 +3,15 @@ body {
 }
 
 .header {
-  &__consultation-link {
-    transition: border-width 0.1s;
-    &:hover,
-    &:focus {
-      border-width: 2px;
-    }
-  }
   &__menu-btn {
     cursor: pointer;
+  }
+  &__consultation-link {
+    transition: background-color 0.2s;
+    &:hover,
+    &:focus {
+      background-color: $cGrayLight;
+    }
   }
 }
 
@@ -89,6 +89,28 @@ body {
     gap: 1.25rem 5rem;
     max-width: 39.75rem;
     margin-right: auto;
+  }
+  &__action-btn {
+    transition: background-color 0.2s;
+    &:hover,
+    &:focus {
+      background-color: $cGrayLight;
+    }
+  }
+  &__social-icon {
+    transition: filter 0.2s;
+    &:hover,
+    &:focus {
+      filter: invert(100%) sepia(76%) saturate(1187%) hue-rotate(178deg)
+        brightness(100%) contrast(111%);
+    }
+  }
+  &__btn-scroll {
+    transition: background-color 0.2s;
+    &:hover,
+    &:focus {
+      background-color: $cGrayLight;
+    }
   }
 }
 
