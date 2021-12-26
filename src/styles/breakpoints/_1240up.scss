@@ -67,6 +67,19 @@
   }
 }
 
+.active-link {
+  &:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 100%;
+    width: 100%;
+    transform: translateY(10px);
+    background-color: $cBlueDark;
+    z-index: 2;
+  }
+}
+
 .underline {
   &::before {
     content: url("../../assets/images/hero/line-pc.svg");
@@ -180,4 +193,7 @@
   &:focus > .main__text--hover {
     transform: scale(1);
   }
+}
+
+.active-link {
 }

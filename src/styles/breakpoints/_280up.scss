@@ -334,6 +334,45 @@
     box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
     border-radius: 1.25rem;
   }
+  &__documents-section {
+    margin-bottom: 10rem;
+  }
+  &__documents {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    justify-items: center;
+  }
+  &__document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 52.5rem;
+    min-height: 6.125rem;
+    background-color: $cWhite;
+    padding: 1.25rem;
+    box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
+    border-radius: 10px;
+  }
+  &__doc-icon {
+    margin-bottom: 0.625rem;
+    width: 0.833125rem;
+    height: 1.041875rem;
+  }
+  &__document-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.625rem;
+    border-radius: 10px;
+    background-color: $cGrayLight;
+  }
+  &__document-title {
+    text-align: center;
+    max-width: 13.75rem;
+    font-weight: 500;
+    margin-bottom: 0.625rem;
+  }
 }
 
 .main__client-slide {
@@ -473,6 +512,10 @@
 
 .section-end {
   margin-bottom: 7.5rem;
+}
+
+.icons-container {
+  display: flex;
 }
 
 .accordion--active {

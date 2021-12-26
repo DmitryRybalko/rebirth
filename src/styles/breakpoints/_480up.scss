@@ -25,6 +25,20 @@
   &__consultation-btn {
     padding: 1.875rem 3.75rem;
   }
+  &__document {
+    flex-direction: row;
+  }
+  &__doc-icon {
+    margin-right: 0.9375rem;
+    margin-bottom: 0;
+  }
+  &__document-title {
+    text-align: left;
+    max-width: 13.75rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-right: auto;
+  }
 }
 
 .main__client-slide {
