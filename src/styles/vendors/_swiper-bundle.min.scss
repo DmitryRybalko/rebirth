@@ -28,6 +28,9 @@
   transition-property: transform;
   box-sizing: content-box;
 }
+.main__clients-swiper {
+  overflow-x: hidden;
+}
 .swiper-android .swiper-slide,
 .swiper-wrapper {
   transform: translate3d(0px, 0, 0);

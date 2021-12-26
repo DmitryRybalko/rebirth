@@ -1,7 +1,7 @@
 import { toggleMenu } from "./modules/menu";
 import { toggleNavigation } from "./modules/navigation";
 import { toggleCard } from "./modules/toggle";
-import { Slider, changeActiveSlideHeight } from "./modules/swiper";
+import { Slider } from "./modules/swiper";
 
 document.addEventListener("DOMContentLoaded", function () {
   toggleNavigation();
@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleCard();
   const gallery = new Slider(".swiper");
   gallery.start();
-  //const clientsGallery = new Slider(".main__clients-swiper");
-  //clientsGallery.start();
-  //changeActiveSlideHeight();
+  const clientsGallery = new Slider(".main__clients-swiper");
+  clientsGallery.start();
 });

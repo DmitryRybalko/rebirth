@@ -25,7 +25,7 @@ export class Slider {
           spaceBetween: 20,
         },
         720: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         1240: {
@@ -33,17 +33,6 @@ export class Slider {
           spaceBetween: 40,
         },
       },
-      //on: {
-      //  init: function () {
-      //    console.log("swiper initialized");
-      //    const slides = document.querySelectorAll(".main__client-slide");
-      //    slides.forEach((slide, i) => {
-      //      slide.classList.contains("swiper-slide-active")
-      //        ? (slide.style.height = "340px")
-      //        : (slide.style.height = "300px");
-      //    });
-      //  },
-      //},
     });
   }
 
@@ -63,13 +52,3 @@ export class Slider {
     this.swiper.autoplay.stop();
   }
 }
-
-//export const changeActiveSlideHeight = () => {
-//  const slides = document.querySelectorAll(".main__client-slide");
-//  slides.forEach((slide, i) => {
-//    slide.classList.contains("swiper-slide-active")
-//      ? (slide.style.height = "340px")
-//      : "";
-//  });
-//};
-//

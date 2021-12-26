@@ -155,12 +155,18 @@
     display: block;
   }
   &__clients-swiper {
-    min-height: 260px;
+    padding: 1.25rem 0 3.125rem;
   }
   &__client-slide {
-    width: 620px;
-    max-width: 620px;
-    min-height: 240px;
+    width: 38.75rem;
+    max-width: 38.75rem;
+    min-height: 15rem;
+  }
+}
+
+.main__client-slide {
+  &.swiper-slide-active {
+    transform: scale(1.1);
   }
 }
 

@@ -1,3 +1,11 @@
+.header {
+  &__logo-small {
+    display: none;
+  }
+  &__logo-big {
+    display: block;
+  }
+}
 .main {
   &__how-to-item {
     align-items: flex-start;
@@ -19,7 +27,19 @@
   }
 }
 
+.main__client-slide {
+  &.swiper-slide-active {
+    transform: scale(1.05);
+  }
+}
+
 .footer {
+  &__logo-small {
+    display: none;
+  }
+  &__logo-big {
+    display: block;
+  }
   &__action-btn {
     padding: 1.875rem 3.75rem;
   }

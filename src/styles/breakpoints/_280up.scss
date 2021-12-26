@@ -19,6 +19,9 @@
   &__logo {
     margin-right: auto;
   }
+  &__logo-big {
+    display: none;
+  }
   &__list {
     display: none;
   }
@@ -284,26 +287,26 @@
     max-width: 27.5rem;
   }
   &__clients-swiper {
-    background-color: bisque;
     width: 100%;
-    //max-width: 100%;
-    min-height: 340px;
+    padding: 1.25rem 0 3.4375rem 0;
   }
   &__client-slide {
     background-color: $cWhite;
-    max-width: 400px;
-    min-height: 300px;
-    padding: 40px;
+    max-width: 25rem;
+    min-height: 18.75rem;
+    padding: 2.5rem;
     box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
-    border-radius: 20px;
+    border-radius: 1.25rem;
+    opacity: 0.25;
+    transition: transform 0.2s, opacity 0.2s;
   }
   &__client {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   &__client-photo {
-    margin-right: 20px;
+    margin-right: 1.25rem;
   }
   &__client-name {
     font-weight: 600;
@@ -316,7 +319,7 @@
   }
   &__client-review {
     color: $cBlueDark;
-    max-width: 540px;
+    max-width: 33.75rem;
   }
   &__partners-section {
     margin-bottom: 10rem;
@@ -326,19 +329,18 @@
     align-items: center;
     justify-content: center;
     background-color: $cWhite;
-    min-height: 140px;
-    width: clamp(260px, 70vw, 440px);
+    min-height: 8.75rem;
+    width: clamp(16.25rem, 70vw, 27.5rem);
     box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 }
 
-//.main__client-slide {
-//  &.swiper-slide-active {
-//    //min-height: 340px;
-//    //transform: scale(1.2);
-//  }
-//}
+.main__client-slide {
+  &.swiper-slide-active {
+    opacity: 1;
+  }
+}
 .heading {
   font-weight: 500;
 }
@@ -368,6 +370,10 @@
   &__logo {
     margin-bottom: 1.5625rem;
   }
+  &__logo-big {
+    display: none;
+  }
+
   &__info {
     font-weight: bold;
     font-size: 1.125rem;
