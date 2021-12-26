@@ -4,7 +4,6 @@ body {
   line-height: 1.25rem;
   font-size: 16px;
   min-height: 100%;
-  //position: relative;
 }
 
 ul {
@@ -102,10 +101,12 @@ button {
   margin-right: 0.625rem;
 }
 
+.text--bold {
+  font-weight: 600;
+}
+
 .footer {
-  margin-top: auto;
-  //position: absolute;
-  //bottom: 0;
+  //margin-top: auto;
 }
 
 .menu-toggled {

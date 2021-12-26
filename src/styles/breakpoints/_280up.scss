@@ -373,6 +373,12 @@
     font-weight: 500;
     margin-bottom: 0.625rem;
   }
+  &__about-text {
+    max-width: 38.75rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.875rem;
+    color: $cBlueDark;
+  }
 }
 
 .main__client-slide {
