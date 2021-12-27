@@ -66,6 +66,13 @@ body {
   &__document {
     min-height: 5rem;
   }
+  &__project-choice {
+    transition: background-color 0.2s;
+    &:hover,
+    &:focus {
+      background: linear-gradient(180deg, $cBlue, $cBlue);
+    }
+  }
 }
 
 .footer {

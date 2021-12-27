@@ -1,1 +1,9 @@
-
+.main {
+  &__project-span {
+    flex-direction: row;
+  }
+  &__project-icon {
+    margin-bottom: 0;
+    margin-right: 0.51875rem;
+  }
+}

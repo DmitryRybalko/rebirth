@@ -184,6 +184,9 @@
   &__news-text {
     margin-bottom: 2.5625rem;
   }
+  &__projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .main__client-slide {

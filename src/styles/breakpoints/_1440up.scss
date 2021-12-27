@@ -19,6 +19,45 @@
   &__consultation-btn {
     padding: 1.5625rem 2.1875rem;
   }
+  &__projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &__project {
+    display: flex;
+    width: 80rem;
+    max-width: 80rem;
+    min-height: 19.9375rem;
+    padding: 0.625rem 0.625rem 0 0.625rem;
+  }
+  &__project-img {
+    object-fit: cover;
+    max-width: 51.875rem;
+    max-height: 18.6875rem;
+    border-radius: 10px 0 10px 10px;
+  }
+  &__project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    padding-left: 2.5rem;
+  }
+  &__project-item {
+    margin-bottom: 0.9375rem;
+  }
+  &__project-span {
+    flex-direction: row;
+  }
+  &__project-icon {
+    margin-bottom: 0;
+  }
+  &__project-choice {
+    max-width: 22.5rem;
+    padding: 1.875rem 3.75rem;
+  }
+  &__project-btn-icon {
+    margin-left: 1.75rem;
+  }
 }
 
 .stretch-item {
