@@ -175,6 +175,15 @@
     max-width: 38.75rem;
     min-height: 15rem;
   }
+  &__news-item {
+    max-width: 25rem;
+  }
+  &__news-meta {
+    min-width: 6.4375rem;
+  }
+  &__news-text {
+    margin-bottom: 2.5625rem;
+  }
 }
 
 .main__client-slide {
