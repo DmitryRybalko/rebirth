@@ -36,7 +36,9 @@
     border-radius: 10px 0 10px 10px;
   }
   &__project-info {
-    @include flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0;
     padding-left: 2.5rem;
   }
