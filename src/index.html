@@ -93,9 +93,9 @@
           млн рублей в Дзержинском р-не Ярославля
         </h1>
         <div class="header__consultation">
-          <a class="header__action-link oval-element--blue" href="#">Выбрать квартиру
-            <img class="header__building-icon building-icon" src="./assets/icons/house.svg" alt="building icon" /></a>
-          <a class="header__action-link header__consultation-link oval-element" href="#">Получить консультацию</a>
+          <button class="header__action-btn oval-element--blue" href="#">Выбрать квартиру
+            <img class="header__building-icon building-icon" src="./assets/icons/house.svg" alt="building icon" /></button>
+          <button class="header__action-btn header__consultation-btn oval-element open-modal" href="#">Получить консультацию</button>
         </div>
       </div>
     </div>
@@ -393,7 +393,7 @@
               <p class="main__label main__question-label">Есть вопросы?</p>
               <p class="main__question-text">Закажите бесплатную консультацию или звоните за номером:</p>
               <p class="main__phone-number">+7 982 45-22-67</p>
-              <button class="main__consultation-btn oval-element--blue">Заказать консультацию</button>
+              <button class="main__consultation-btn oval-element--blue open-modal">Заказать консультацию</button>
             </div>
           </div>
         </div>
@@ -477,7 +477,7 @@
             <p class="footer__info footer__ask">Остались вопросы?</p>
             <p class="footer__text">Закажите бесплатную консультацию</p>
           </div>
-          <button class="footer__action-btn oval-element">Заказать консультацию</button>
+          <button class="footer__action-btn oval-element open-modal">Заказать консультацию</button>
         </div>
       </div>
     </div>
@@ -546,10 +546,10 @@
         <label class="modal__label" for="name">Ваше имя *</label>
         <input class="modal__input" type="text" id="name" name="name" placeholder="Имя" required>
         <label class="modal__label" for="number">Ваш номер телефона  *</label>
-        <input class="modal__input" type="tel" id="number" name="number" required>
-        <button class="modal__btn">Отправить</button>
+        <input class="modal__input" type="tel" id="number" name="number" placeholder="+_ (___) ___ __ __" required>
+        <button class="modal__btn" type="submit" value="Submit">Отправить</button>
       </form>
-      <button class="modal__close-btn" type="submit" value="Submit">Закрыть</button>
+      <button class="modal__close-btn">Закрыть</button>
     </div>
   </div>
   <script type="module" src="./scripts/main.js"></script>

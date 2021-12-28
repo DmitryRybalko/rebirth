@@ -6,7 +6,7 @@ body {
   &__menu-btn {
     cursor: pointer;
   }
-  &__consultation-link {
+  &__consultation-btn {
     transition: background-color 0.2s;
     &:hover,
     &:focus {
@@ -103,6 +103,7 @@ body {
     gap: 1.25rem 5rem;
     max-width: 39.75rem;
     margin-right: auto;
+    margin-bottom: 0;
   }
   &__action-btn {
     transition: background-color 0.2s;
@@ -124,6 +125,16 @@ body {
     &:hover,
     &:focus {
       background-color: $cGrayLight;
+    }
+  }
+}
+
+.modal {
+  &__btn {
+    transition: background-color 0.2s;
+    &:hover,
+    &:focus {
+      background: linear-gradient(180deg, $cBlue, $cBlue);
     }
   }
 }
