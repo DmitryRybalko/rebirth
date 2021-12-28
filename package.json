@@ -90,7 +90,6 @@
     ]
   },
   "dependencies": {
-    "gsap": "^3.9.0",
     "imask": "^6.2.2",
     "swiper": "^7.3.4"
   }
