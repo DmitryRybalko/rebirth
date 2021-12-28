@@ -41,9 +41,7 @@
     margin-bottom: 1.25rem;
   }
   &__consultation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
   }
   &__consultation-btn {
     background-color: transparent;
@@ -61,9 +59,7 @@
 
 .main {
   &__section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
   }
   &__heading {
     font-weight: 500;
@@ -122,18 +118,15 @@
     display: none;
   }
   &__draft {
+    @include flex;
     width: clamp(96.5%, 90vw, 100%);
     max-width: 27.5rem;
     min-height: 45.1875rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $cWhite;
     box-shadow: 0rem 1.25rem 1.25rem rgba(0, 63, 128, 0.05);
     border-radius: 20px;
   }
   &__draft-show {
-    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
@@ -145,13 +138,12 @@
   &__draft-img {
     position: absolute;
     top: 15%;
+    transform: translateX(-50%);
     max-width: 22.5rem;
     max-height: 15.0625rem;
   }
   &__draft-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     border-radius: 0.625rem;
   }
   &__choices {
@@ -169,6 +161,7 @@
   }
 
   &__radio-label {
+    cursor: pointer;
     display: inline-block;
     background-color: $cGrayLight;
     color: $cBlue;
@@ -218,9 +211,6 @@
   &__how-to-section {
     min-height: 66.8125rem;
     background-color: $cWhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   &__how-to {
     display: grid;
@@ -229,13 +219,11 @@
     width: 100%;
   }
   &__how-to-item {
+    @include flex;
     background-color: $cGrayLight;
     max-width: 27.5rem;
     padding: 1.25rem;
     border-radius: 1.25rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
   }
   &__icon-container {
     width: 5.625rem;
@@ -276,9 +264,7 @@
     line-height: 1.8125rem;
   }
   &__consultation-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -349,9 +335,7 @@
     justify-items: center;
   }
   &__document {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     width: 100%;
     max-width: 52.5rem;
     min-height: 6.125rem;
@@ -396,6 +380,8 @@
   }
   &__news-image {
     width: 100%;
+    max-width: 51.875rem;
+    height: 100%;
     max-height: 15.625rem;
     border-radius: 10px 10px 0 0;
   }
@@ -482,9 +468,7 @@
     }
   }
   &__project-span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     background-color: $cGrayLight;
     border-radius: 30px;
     padding: 0.3125rem 0.625rem;
@@ -496,6 +480,7 @@
     margin-bottom: 0.51875rem;
   }
   &__project-choice {
+    @include gradient-shadow-border;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -505,11 +490,6 @@
     font-weight: bold;
     color: $cWhite;
     padding: 1.25rem 1.25rem;
-    background: linear-gradient(180deg, $cBlueLight 0%, $cBlue 100%);
-    box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1),
-      inset 0px 2px 0px rgba(255, 255, 255, 0.25),
-      inset 0px -2px 0px rgba(0, 32, 64, 0.1);
-    border-radius: 10px;
   }
   &__project-btn-icon {
     margin-left: 1.25rem;
@@ -541,9 +521,7 @@
   background-color: $cBlueDark;
   color: $cWhite;
   &__top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex;
     justify-content: center;
     padding: 2.5rem 0 2.5rem 0;
   }
@@ -657,89 +635,6 @@
 
 .icons-container {
   display: flex;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  transform: scale(0);
-  transition: transform 0.2s linear;
-  &__inner {
-    max-width: 31.875rem;
-    min-height: 38.3125rem;
-    position: relative;
-    background-color: $cWhite;
-    padding: 3.75rem;
-    color: $cBlueDark;
-    box-shadow: 0px 20px 20px rgba(0, 63, 128, 0.05);
-    border-radius: 20px;
-  }
-  &__heading {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.8125rem;
-    text-align: center;
-    margin-bottom: 1.25rem;
-  }
-  &__text {
-    text-align: center;
-    margin-bottom: 2.5rem;
-  }
-  &__form {
-    display: flex;
-    flex-direction: column;
-  }
-  &__label {
-    margin-bottom: 0.625rem;
-  }
-  &__input {
-    font-family: "Montserrat", sans-serif;
-    padding: 1.25rem;
-    min-height: 3.75rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid $cGray;
-    border-radius: 10px;
-  }
-  &__btn {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: $cWhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.875rem 3.75rem;
-    width: 100%;
-    max-width: 24.375rem;
-    background: linear-gradient(180deg, $cBlueLight 0%, $cBlue 100%);
-    box-shadow: 0px 10px 10px rgba(0, 32, 64, 0.1),
-      inset 0px 2px 0px rgba(255, 255, 255, 0.25),
-      inset 0px -2px 0px rgba(0, 32, 64, 0.1);
-    border-radius: 10px;
-    margin-bottom: 1.25rem;
-  }
-  &__close-btn {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 24.375rem;
-    padding: 0.625rem;
-    background-color: $cGrayLight;
-    border-radius: 10px;
-    font-weight: 500;
-    color: $cBlue;
-  }
 }
 
 .validate-input {

@@ -6,6 +6,7 @@ const glob = require("glob");
 const server = browserSync.create();
 const loadPlugins = require("gulp-load-plugins");
 const $ = loadPlugins();
+const uglify = require("gulp-uglify-es").default;
 const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
 const browserify = require("browserify");
@@ -67,30 +68,21 @@ function styles() {
 
 function scripts() {
   let jsFiles = glob.sync("./src/scripts/**/*.js");
-  return (
-    browserify({
-      plugin: [[require("esmify")]],
-      entries: jsFiles,
-      //extensions: [".js"],
-      debug: true,
+  return browserify({
+    plugin: [[require("esmify")]],
+    entries: jsFiles,
+    debug: true,
+  })
+    .transform("babelify", {
+      presets: ["@babel/preset-env"],
     })
-      .transform("babelify", {
-        presets: ["@babel/preset-env"],
-      })
-      .bundle()
-      //.pipe(fs.createWriteStream("./src/scripts/main.js"))
-      .pipe(source("main.js"))
-      .pipe(buffer())
-      .pipe($.sourcemaps.init())
-      .pipe($.sourcemaps.write("."))
-      .pipe(dest("./dist/scripts/"))
-  );
-
-  // src("./src/scripts/**/*.js")
-  //   .pipe($.sourcemaps.init())
-  //   .pipe($.babel())
-  //   .pipe($.sourcemaps.write("."))
-  //   .pipe(dest("./dist/scripts"))
+    .bundle()
+    .pipe(source("main.js"))
+    .pipe(buffer())
+    .pipe($.sourcemaps.init())
+    .pipe(uglify())
+    .pipe($.sourcemaps.write("."))
+    .pipe(dest("./dist/scripts/"));
 }
 
 function startAppServer() {

@@ -129,16 +129,6 @@ body {
   }
 }
 
-.modal {
-  &__btn {
-    transition: background-color 0.2s;
-    &:hover,
-    &:focus {
-      background: linear-gradient(180deg, $cBlue, $cBlue);
-    }
-  }
-}
-
 .stretch-item {
   width: 100%;
   margin: 0 auto;

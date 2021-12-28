@@ -308,9 +308,11 @@
       </h2>
       <div class="main__draft">
         <div class="main__draft-show">
-          <img class="main__draft-img  in-view" src="./assets/images/drafts/draft-2.png"
+          <picture>
+            <source srcset="./assets/images/drafts/draft-2.webp" type="image/webp">
+            <img class="main__draft-img  in-view" src="./assets/images/drafts/draft-2.png"
             alt="планировка однокомнатной квартиры">
-          <img class="main__draft-img" src="./assets/images/drafts/draft-2.png" alt="планировка двухкомнатной квартиры">
+          </picture>
         </div>
         <form class="form" action="">
           <div class="main__draft-panel">
@@ -335,18 +337,54 @@
         <!-- Additional required wrapper -->
         <div class="main__swiper-wrapper swiper-wrapper">
           <!-- Slides -->
-          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
-              src="./assets/images/gallery/gallery-1.jpg" alt="дом"></div>
-          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
-              src="./assets/images/gallery/gallery-2.jpg" alt="дом"></div>
-          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
-              src="./assets/images/gallery/gallery-3.jpg" alt="дом"></div>
-          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
-              src="./assets/images/gallery/gallery-4.jpg" alt="дом"></div>
-          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
-              src="./assets/images/gallery/gallery-5.jpg" alt="дом"></div>
-          <div class="main__swiper-slide swiper-slide"><img class="main__gallery-slide"
-              src="./assets/images/gallery/gallery-6.jpg" alt="дом"></div>
+          <div class="main__swiper-slide swiper-slide">
+            <picture class="main__gallery-slide">
+              <source srcset="./assets/images/gallery/gallery-1.webp" type="image/webp">
+              <img class="main__gallery-slide swiper-lazy"
+              data-src="./assets/images/gallery/gallery-1.jpg" alt="дом" >
+            </picture>
+            <div class="swiper-lazy-preloader"></div>
+            </div>
+          <div class="main__swiper-slide swiper-slide"> 
+            <picture class="main__gallery-slide">
+              <source srcset="./assets/images/gallery/gallery-2.webp" type="image/webp">
+              <img class="main__gallery-slide swiper-lazy"
+              data-src="./assets/images/gallery/gallery-2.jpg" alt="дом">
+            </picture>
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="main__swiper-slide swiper-slide"> 
+            <picture class="main__gallery-slide">
+              <source srcset="./assets/images/gallery/gallery-3.webp" type="image/webp">
+              <img class="main__gallery-slide swiper-lazy"
+              data-src="./assets/images/gallery/gallery-3.jpg" alt="дом">
+            </picture>
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="main__swiper-slide swiper-slide"> 
+            <picture class="main__gallery-slide">
+              <source srcset="./assets/images/gallery/gallery-4.webp" type="image/webp">
+              <img class="main__gallery-slide swiper-lazy"
+              data-src="./assets/images/gallery/gallery-4.jpg" alt="дом">
+            </picture>
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="main__swiper-slide swiper-slide"> 
+            <picture class="main__gallery-slide">
+              <source srcset="./assets/images/gallery/gallery-5.webp" type="image/webp">
+              <img class="main__gallery-slide swiper-lazy"
+              data-src="./assets/images/gallery/gallery-5.jpg" alt="дом">
+            </picture>
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="main__swiper-slide swiper-slide"> 
+            <picture class="main__gallery-slide">
+              <source srcset="./assets/images/gallery/gallery-6.webp" type="image/webp">
+              <img class="main__gallery-slide swiper-lazy"
+              data-src="./assets/images/gallery/gallery-6.jpg" alt="дом">
+            </picture>
+            <div class="swiper-lazy-preloader"></div>
+          </div>
           <!-- END Slides -->
         </div>
         <div class="main__swiper-button swiper-button-prev"></div>
@@ -409,7 +447,10 @@
           <!-- Slides -->
           <div class="main__client-slide swiper-slide">
             <div class="main__client">
-              <img class="main__client-photo" src="./assets/images/clients/vitaly.jpg" alt="фото">
+              <picture>
+                <source srcset="./assets/images/clients/vitaly.webp" type="image/webp">
+                <img class="main__client-photo" src="./assets/images/clients/vitaly.jpg" alt="фото">
+              </picture>
               <div class="main__client-meta">
                 <p class="main__client-name">Виталий Степанов</p>
                 <a class="main__client-link" href="https://vk.com" target="_blank">Страница VK</a>
@@ -421,7 +462,10 @@
           </div>
           <div class="main__client-slide swiper-slide">
             <div class="main__client">
-              <img class="main__client-photo" src="./assets/images/clients/anna.jpg" alt="фото">
+              <picture>
+                <source srcset="./assets/images/clients/anna.webp" type="image/webp">
+                <img class="main__client-photo" src="./assets/images/clients/anna.jpg" alt="фото">
+              </picture>
               <div class="main__client-meta">
                 <p class="main__client-name">Анна Петровна</p>
                 <a class="main__client-link" href="https://vk.com" target="_blank">Страница VK</a>
@@ -433,7 +477,10 @@
           </div>
           <div class="main__client-slide swiper-slide">
             <div class="main__client">
-              <img class="main__client-photo" src="./assets/images/clients/anton.jpg" alt="фото">
+              <picture>
+                <source srcset="./assets/images/clients/anton.webp" type="image/webp">
+                <img class="main__client-photo" src="./assets/images/clients/anton.jpg" alt="фото">
+              </picture>
               <div class="main__client-meta">
                 <p class="main__client-name">Антон Сергеевич</p>
                 <a class="main__client-link" href="https://vk.com" target="_blank">Страница VK</a>

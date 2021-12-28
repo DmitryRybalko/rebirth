@@ -1,6 +1,6 @@
-import Swiper, { Navigation, Autoplay } from "swiper";
+import Swiper, { Navigation, Autoplay, Lazy } from "swiper";
 
-Swiper.use([Navigation, Autoplay]);
+Swiper.use([Navigation, Autoplay, Lazy]);
 
 export class Slider {
   constructor(el) {
@@ -10,6 +10,9 @@ export class Slider {
 
   _initSwiper() {
     return new Swiper(this.el, {
+      preloadImages: false,
+      lazy: true,
+      watchSlidesProgress: true,
       direction: "horizontal",
       loop: true,
       centeredSlides: true,
